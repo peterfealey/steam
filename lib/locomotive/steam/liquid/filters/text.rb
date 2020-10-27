@@ -17,7 +17,7 @@ module Locomotive
           end
 
           def parameterize(input)
-            input.present? ? input.parameterize
+            input.parameterize rescue ""
           end
 
           # alias newline_to_br
