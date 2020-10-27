@@ -46,7 +46,7 @@ module Locomotive
               change_page_locale(locale, page) do
                 path  = link_path(locale)
                 option = selected_option(locale)
-                %(<option #{option} id="language-selector-iso-#{locale}" value="#{path}">#{link_label(locale)}</option>)
+                %{<option #{option} id="language-selector-iso-#{locale}" value="#{path}">#{link_label(locale)}</option>}
               end
             end
           end
